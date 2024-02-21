@@ -35,7 +35,7 @@
                 </div>
                 <div class="campo_texto_entrada">
                     <div class="logo_campo_texto"><span class="material-symbols-outlined">key</span></div>
-                    <input type="text" id="passwor_1" name="passwor_1" placeholder="Contraseña" required>
+                    <input type="text" id="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <input type="submit" value="Iniciar Sesión" class="boton_normal">
                 <input type="hidden" name="redirect" value="administrador/admin_inicio/">
@@ -57,7 +57,7 @@
   
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $correo_electronico = $_POST["correo_electronico"];
-        $passwor_1 = $_POST["passwor_1"];
+        $passwor_1 = $_POST["password"];
   
         include("conexion_bd.php");
   
