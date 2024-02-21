@@ -79,7 +79,7 @@
                     echo "llegue acá";
                     $nuevo_en = "<sscript>location.href='" . $_POST['redirect'] . "'</script>";
                     //header("Location: " . $_POST['redirect']);
-                    echo '"aaaaa' . $nuevo_en . '"';
+                    echo  $nuevo_en;
                     
                     //echo "Redirigiendo a: " . $_POST['redirect'];
                     echo "llegue awcá";
