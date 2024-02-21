@@ -78,6 +78,7 @@
                     $_SESSION['id_admin'] = $row['id_administrador'];
                     echo "llegue acá";
                     header("Location: " . $_POST['redirect']);
+                    echo "Redirigiendo a: " . $_POST['redirect'];
                     echo "llegue awcá";
                     exit();
                 } else {
