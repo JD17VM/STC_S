@@ -27,7 +27,7 @@
             <div class="logo_login logo_salud_1"></div>
 
 
-            <form action="" method="post">
+            <form action="login.php" method="post">
                 <p>Ingrese sus datos para iniciar sesión</p>
                 <div class="campo_texto_entrada">
                     <div class="logo_campo_texto"><span class="material-symbols-outlined">person</span></div>
