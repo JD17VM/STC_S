@@ -58,7 +58,7 @@
         $correo_electronico = $_POST["correo_electronico"];
         $password = $_POST["password"];
   
-        include("https://www.jpawaj.com/Salud_TC/conexion_bd.php");
+        include("conexion_bd.php");
   
         $consulta = "SELECT * FROM administrador WHERE correo_electronico = ? LIMIT 1";
         $stmt = mysqli_prepare($conexion, $consulta);
