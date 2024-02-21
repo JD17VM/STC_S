@@ -83,7 +83,7 @@
                     
                     //echo "Redirigiendo a: " . $_POST['redirect'];
                     echo "llegue awcá";
-                    exit();
+                    //exit();
                 } else {
                     echo "Contraseña incorrecta.";
                 }
