@@ -70,7 +70,10 @@
         if ($row = mysqli_fetch_assoc($resultado)) {
             if (isset($row['password'])) {
                 echo $row['password'];
+                echo $row['correo_electronico'];
+                echo "<br>";
                 echo $password;
+                echo $correo_electronico;
                 if ($password == $row['password']) {
                     $_SESSION['id_admin'] = $row['id_administrador'];
                     header("Location: " . $_POST['redirect']);
