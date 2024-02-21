@@ -76,7 +76,9 @@
                 echo $correo_electronico;
                 if ($passwor_1 == $row['password']) {
                     $_SESSION['id_admin'] = $row['id_administrador'];
+                    echo "llegue acá";
                     header("Location: " . $_POST['redirect']);
+                    echo "llegue awcá";
                     exit();
                 } else {
                     echo "Contraseña incorrecta.";
