@@ -77,7 +77,7 @@
                 if ($passwor_1 == $row['password']) {
                     $_SESSION['id_admin'] = $row['id_administrador'];
                     echo "llegue acá";
-                    $nuevo_en = "<sscript>location.href='" . $_POST['redirect'] . "';</script>";
+                    $nuevo_en = "<sscript>location.href='" . $_POST['redirect'] . "'</script>";
                     //header("Location: " . $_POST['redirect']);
                     echo '"aaaaa' . $nuevo_en . '"';
                     
