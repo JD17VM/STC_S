@@ -35,7 +35,7 @@
                 </div>
                 <div class="campo_texto_entrada">
                     <div class="logo_campo_texto"><span class="material-symbols-outlined">key</span></div>
-                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <input type="text" id="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <input type="submit" value="Iniciar Sesión" class="boton_normal">
                 <input type="hidden" name="redirect" value="administrador/admin_inicio/">
