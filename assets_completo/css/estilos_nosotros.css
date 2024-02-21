@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap');
+
+:root{
+    --size_titulo_1: 35px;
+    --size_titulo_2: 28px;
+    --size_titulo_3: 24px;
+    --size_titulo_4: 20px; 
+    --size_titulo_5: 15px;
+
+    --color_celeste_claro_0:#DFF9FF;
+    --color_celeste_claro_1:#9EE2FF;
+    --color_celeste_claro_2:#61E2FF;
+
+    --color_celeste_oscuro_0:#6BCEFF;
+    --color_celeste_oscuro_1:#00C0EB;
+    --color_celeste_oscuro_2:#0098BA;
+    --color_celeste_oscuro_3:#007f9b;
+
+    --color_negro_0:#161616;
+    --color_negro_1:#0a0a0a;
+    --color_blanco_0:#fafafa;
+    --color_blanco_1:#e4e4e4;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+}
+
+html{
+    font-family: 'Inconsolata', monospace;
+}
+
+h1{
+    margin:0;
+}
+
+.contenedor_informacion_general{
+    background: linear-gradient(180deg, rgba(141,253,255,1) 0%, rgba(205,205,205,1) 90%);
+    padding:2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.informacion_general{
+    background-color: rgba(255, 255, 255, 0.377);
+    width:75%;
+    padding:1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_texto_foto{
+    /* background-color: yellow; */
+    width: 90%;
+    display: flex;
+}
+
+.contenedor_texto_foto > .contenedor_texto{
+    /* background-color: red; */
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_texto_foto > .contenedor_texto > p{
+    text-align: center;
+    font-weight: var(--ancho_fuente_medio);
+    color:rgb(36, 36, 36);
+}
+
+.contenedor_texto_foto > .contenedor_foto{
+    /* background-color: green; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_texto_foto > .contenedor_foto > .cont_imagen{
+    background-color: black;
+    width:90%;
+    height: 15rem;
+    background-image: url("http://noticias.essalud.gob.pe/wp-content/uploads/2021/08/51401087563_192339102a_c.jpg");
+    background-size: auto 100%; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+}
+
+.titulo_informacion_general{
+    margin-bottom: 1rem;
+}
+
+
+/* ------------------------- */
+
+.contenedor_nuestra_mision{
+    background-color: none;
+}
+
+.contenedor_titulo_nuestra_mision{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.contenedor_triple{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    height: 12rem;
+}
+
+.contenedor_triple > .cont_vision{
+    width:14rem;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.4rem;
+    height: 11rem;
+    
+}
+
+.contenedor_triple > div:nth-of-type(1){
+    background-color: var(--color_celeste_oscuro_3);
+}
+
+.contenedor_triple > div:nth-of-type(3){
+    background-color: var(--color_celeste_claro_2);
+}
+
+.contenedor_triple > .cont_vision > h3{
+    font-size: var(--size_titulo_2);
+    color:white;
+}
+
+
+.contenedor_triple > .cont_vision > p{
+    font-weight: var(--ancho_fuente_medio);
+    color:rgb(36, 36, 36);
+    text-align: center;
+}
+
+.contenedor_triple .cont_imagen_medio{
+    background-color: black;
+    width:18rem;
+    height: 100%;
+    background-image: url("https://cdn.www.gob.pe/uploads/document/file/4488547/standard_IMG_4065.jpg");
+    background-size: auto 100%; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+}
+
+
+.contenedor_documentos_de_gestion{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.contenedor_documentos_de_gestion > .contenedor_documentos{
+    /* background-color: black; */
+    width:80%;
+    height: 11rem;
+    margin-top:1rem;
+    background-image: url("../img/imagen_documentos.png");
+    background-size: 100% auto; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+}

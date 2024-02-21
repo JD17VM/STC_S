@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap');
+
+:root{
+    --size_titulo_1: 35px;
+    --size_titulo_2: 28px;
+    --size_titulo_3: 24px;
+    --size_titulo_4: 20px; 
+    --size_titulo_5: 15px;
+
+    --color_celeste_claro_0:#DFF9FF;
+    --color_celeste_claro_1:#9EE2FF;
+    --color_celeste_claro_2:#61E2FF;
+
+    --color_celeste_oscuro_0:#6BCEFF;
+    --color_celeste_oscuro_1:#00C0EB;
+    --color_celeste_oscuro_2:#0098BA;
+    --color_celeste_oscuro_3:#007f9b;
+
+    --color_negro_0:#161616;
+    --color_negro_1:#0a0a0a;
+    --color_blanco_0:#fafafa;
+    --color_blanco_1:#e4e4e4;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+}
+
+html{
+    font-family: 'Inconsolata', monospace;
+}
+
+body{
+    display:flex;
+}
+
+.cabecera_contenido{
+    padding:1rem 0;
+
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+}
+
+.cabecera_contenido > h1{
+    color:var(--color_celeste_oscuro_3);
+    font-weight: var(--ancho_fuente_grueso);
+    margin-left: 5rem;
+    font-size: var(--size_titulo_1);
+    
+}
+
+.navegador_izquierda{
+    background-color: var(--color_celeste_oscuro_3);
+    width:25%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: space-around;
+    
+    
+}
+
+.logo_salud_1{
+    width:8rem;
+    height:8rem;
+    /*background-color: black;*/
+    background-image: url("../img/logo_2.png");
+    background-size: 100% auto; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    
+}
+
+.contenedor_enlaces_navegador{
+    
+    width:16rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+.contenedor_enlaces_navegador > .botones_navegador{
+    width:100%;
+    padding: 0.5rem 1rem;
+}
+
+
+.navegador_izquierda > .botones_navegador{
+    width:16rem;
+    padding: 0.5rem 1rem;
+}
+
+.contenido{
+    width: 75%;
+    background-color: var(--color_blanco_1);
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* IMPORTANTE */
+.navegador_izquierda{
+    position: fixed;
+  top: 0;
+  left: 0;
+  
+  padding: 10px;
+  z-index: 1000; /* Asegura que la barra de navegación esté por encima del contenido */
+}
+
+.contenido{
+    padding-left:22rem;
+}
+
+/* sssssssssss */
+
+.cabecera_inicio{
+    background-color: var(--color_celeste_oscuro_3);
+    width: 100%;
+    padding:1rem 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecera_inicio > h1{
+    font-size: var(--size_titulo_1);
+    color: var(--color_blanco_1);
+    font-weight: var(--ancho_fuente_medio);
+    
+}
+
+.logo_salud_2{
+    
+    width: 13rem;
+    height: 4.6rem;
+    background-image: url("../img/logo_1.png");
+    background-size: 100% auto; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+}

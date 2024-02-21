@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap');
+
+:root{
+    --size_titulo_1: 35px;
+    --size_titulo_2: 28px;
+    --size_titulo_3: 24px;
+    --size_titulo_4: 20px; 
+    --size_titulo_5: 15px;
+
+    --color_celeste_claro_0:#DFF9FF;
+    --color_celeste_claro_1:#9EE2FF;
+    --color_celeste_claro_2:#61E2FF;
+
+    --color_celeste_oscuro_0:#6BCEFF;
+    --color_celeste_oscuro_1:#00C0EB;
+    --color_celeste_oscuro_2:#0098BA;
+    --color_celeste_oscuro_3:#007f9b;
+
+    --color_negro_0:#161616;
+    --color_negro_1:#0a0a0a;
+    --color_blanco_0:#fafafa;
+    --color_blanco_1:#e4e4e4;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+}
+
+html{
+    font-family: 'Inconsolata', monospace;
+}
+
+
+.cabecera_nuestros_servicios{
+    background-color: yellow;
+
+    background-image: url("../img/fondo_cabecera_directorio_institucional.png");
+    background-size: 100% auto; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+
+    width: 100%;
+    height: 10rem;
+    padding-bottom: 2rem;
+}
+
+
+.lista_directores{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top:1rem;
+}
+
+.lista_directores > h2{
+    margin-bottom:1rem;
+    font-size: var(--size_titulo_2);
+}
+
+.contenedor_trabajador{
+    background-color: var(--color_blanco_1);
+    padding:1rem 1rem;
+    display: flex;
+    width:50%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+
+.contenedor_trabajador > .contenedor_imagen_trabajador{
+    background-color: yellow;
+    width: 20%;
+    height: 10rem;
+}
+
+.contenedor_trabajador > .contenedor_imagen_trabajador > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contenedor_trabajador > .contenedor_informacion_trabajador{
+    width: 80%;
+    padding: 0 1rem;
+}
+
+.contenedor_trabajador > .contenedor_informacion_trabajador > h4{
+    font-size: var(--size_titulo_3);
+}
+
+.contenedor_trabajador > .contenedor_informacion_trabajador > p{
+    font-weight: var(--ancho_fuente_medio);
+    color:rgb(46, 46, 46);
+}
+
+.contenedor_trabajador > .contenedor_informacion_trabajador > p:nth-child(2){
+    font-weight: var(--ancho_fuente_grueso);
+}
+
+.contenedor_trabajador > .contenedor_informacion_trabajador > p:nth-child(3){
+    text-decoration: underline;
+}
+
+
+hr {
+    border: none; /* Quita el borde predeterminado */
+    height: 1px; /* Define la altura de la línea */
+    background-color: #000; /* Cambia el color de fondo de la línea */
+    margin: 0.9rem 0; /* Agrega espacio alrededor de la línea */
+}
+
+
+.contenedor_boton_whatsapp_libro_reclamaciones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}

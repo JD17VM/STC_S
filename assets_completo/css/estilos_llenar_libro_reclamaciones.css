@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap');
+
+:root{
+    --size_titulo_1: 35px;
+    --size_titulo_2: 28px;
+    --size_titulo_3: 24px;
+    --size_titulo_4: 20px; 
+    --size_titulo_5: 15px;
+
+    --color_celeste_claro_0:#DFF9FF;
+    --color_celeste_claro_1:#9EE2FF;
+    --color_celeste_claro_2:#61E2FF;
+
+    --color_celeste_oscuro_0:#6BCEFF;
+    --color_celeste_oscuro_1:#00C0EB;
+    --color_celeste_oscuro_2:#0098BA;
+    --color_celeste_oscuro_3:#007f9b;
+
+    --color_negro_0:#161616;
+    --color_negro_1:#0a0a0a;
+    --color_blanco_0:#fafafa;
+    --color_blanco_1:#e4e4e4;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+}
+
+
+.contenedor_llenar_libro_reclamaciones_completo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor_llenar_libro_reclamaciones_completo > form{
+    background-color: var(--color_celeste_oscuro_2);
+    padding:1rem 3rem;
+    box-sizing: border-box;
+    margin:2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor_llenar_libro_reclamaciones_completo > form > h1{
+    margin-bottom: 0;
+    color:var(--color_blanco_0);
+}
+
+.contenedor_llenar_libro_reclamaciones_completo > form > p{
+    margin-bottom: 3rem;
+    color:var(--color_blanco_0);
+}
+
+.contenedor_formulario_doble{
+    display: flex;
+}
+
+.contenedor_formulario_doble > .campo_texto_form_libro_reclamaciones:nth-child(1){
+    margin-right: 2rem;
+}
+
+.contenedor_formulario_doble > .campo_texto_form_libro_reclamaciones{
+    width: 100%;
+}
+
+.campo_texto_form_libro_reclamaciones{
+    margin-bottom: 0.8rem;
+    width: 100%;
+}
+
+.campo_texto_form_libro_reclamaciones > label{
+    font-weight: var(--ancho_fuente_medio);
+    color: var(--color_blanco_0);
+}
+
+.campo_texto_form_libro_reclamaciones > input, textarea{
+    width: 100%;
+    padding:0.5rem 1rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+}
+
+.contenedor_llenar_libro_reclamaciones_completo > form > input{
+    padding:0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border:3px solid white;
+    box-sizing: border-box;
+    font-weight: var(--ancho_fuente_medio);
+    color: white;
+    background-color: var(--color_celeste_oscuro_2);
+    cursor:pointer;
+}
+
+
+.contenedor_llenar_libro_reclamaciones_completo > form > input:hover{
+    background-color: var(--color_blanco_0);
+    color:var(--color_negro_1)
+}
+
+
+.contenedor_llenar_libro_reclamaciones_completo > form > input:active{
+    background-color: var(--color_celeste_claro_1);
+}
+

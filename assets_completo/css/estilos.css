@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap');
+
+:root{
+    --size_titulo_1: 35px;
+    --size_titulo_2: 28px;
+    --size_titulo_3: 24px;
+    --size_titulo_4: 20px; 
+    --size_titulo_5: 15px;
+
+    --color_celeste_claro_0:#DFF9FF;
+    --color_celeste_claro_1:#9EE2FF;
+    --color_celeste_claro_2:#61E2FF;
+
+    --color_celeste_oscuro_0:#6BCEFF;
+    --color_celeste_oscuro_1:#00C0EB;
+    --color_celeste_oscuro_2:#0098BA;
+    --color_celeste_oscuro_3:#007f9b;
+
+    --color_negro_0:#161616;
+    --color_negro_1:#0a0a0a;
+    --color_blanco_0:#fafafa;
+    --color_blanco_1:#e4e4e4;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+}
+
+html{
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/* BOTONES NAVEGADOR */
+
+.botones_navegador{
+    display:flex;
+    background-color: var(--color_celeste_oscuro_2);
+    align-items: center;
+    padding:0.5rem 2.5rem;
+    border-radius: 0.5rem;
+    cursor:pointer;
+}
+
+.botones_navegador > p{
+    font-weight: var(--ancho_fuente_grueso);
+    font-size: var(--size_titulo_3);
+    margin-left:0.5rem;
+    color:var(--color_blanco_0);
+}
+
+
+.botones_navegador:hover{
+    background-color: var(--color_blanco_0);
+}
+
+.botones_navegador:hover > p{
+    color:var(--color_celeste_oscuro_2);
+}
+
+.botones_navegador:hover > span{
+    color:var(--color_celeste_oscuro_2);
+}
+
+.botones_navegador:active{
+    background-color: var(--color_celeste_claro_2);
+}
+
+/* ------------------------------*/
+
+.margen{
+    margin-bottom: 2rem;
+}
+
+/* BOTONES NORMALES  ------------*/
+
+.boton_normal{
+    background-color: var(--color_celeste_oscuro_2);
+    border-radius: 0.5rem;
+    padding: 0.1rem 2rem;
+    cursor:pointer;
+    border: 2px solid transparent;
+    
+}
+
+.boton_normal > p, .boton_normal[type="submit"]{
+    font-size: var(--size_titulo_4);
+    font-weight: var(--ancho_fuente_medio);
+    color:var(--color_negro_1)
+}
+
+.boton_normal:hover{
+    background-color: var(--color_blanco_0);
+    border:2px solid var(--color_celeste_oscuro_2);
+    
+}
+
+.boton_normal:active{
+    background-color: var(--color_celeste_oscuro_0);
+}
+
+
+/* ------------------------------*/
+
+.formulario_agregar{
+    width:25rem;
+    border-radius: 1rem;
+
+}
+
+.formulario_agregar > .cabecera_formulario{
+    background-color:var(--color_celeste_oscuro_2);
+    padding:0.8rem 0 0.5rem 0;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.formulario_agregar > .cabecera_formulario > h2{
+    font-size: var(--size_titulo_3);
+}
+
+.formulario_agregar > .cabecera_formulario > div{
+    width:2.5rem;
+}
+
+.formulario_agregar > .cabecera_formulario > button{
+    padding-right: 0.7rem;
+    cursor:pointer;
+}
+
+.formulario_agregar > .cuerpo_formulario{
+    border:1.5px solid rgb(160, 160, 160);
+    padding:1rem 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.formulario_agregar > .cuerpo_formulario > form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario_agregar > .cuerpo_formulario > form > button.boton_normal > p{
+    font-size: var(--size_titulo_5);
+}
+
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: var(--size_titulo_5);
+}
+
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto > div{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto > div > .boton_normal{
+    width:5rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color_celeste_claro_0);
+    border-color: rgb(219, 219, 219);
+}
+
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto > div > .boton_normal > p{
+    font-size: 12px;
+}
+
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto > label{
+    font-weight: var(--ancho_fuente_medio);
+}
+
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto > input[type="text"], .formulario_agregar > .cuerpo_formulario > form > .campo_texto > textarea,
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto > div input[type="text"]
+{
+    width:11rem;
+    background-color: var(--color_blanco_1);
+    padding:2px;
+    color:var(--color_negro_0);
+}
+
+.formulario_agregar > .cuerpo_formulario > form > .campo_texto > div input[type="text"]{
+    margin-bottom: 5px;
+}
+
+/* -------------ESTAS SEGURO-----------------*/
+
+
+.pregunta_2_opciones{
+    width:30rem;
+
+}
+
+.pregunta_2_opciones > .cabecera_pregunta{
+    background-color:var(--color_celeste_claro_2);
+    padding:0.8rem 0 0.5rem 0;
+    display:flex;
+    justify-content: center;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.pregunta_2_opciones > .cabecera_pregunta > h2{
+    font-size: var(--size_titulo_4);
+}
+
+.pregunta_2_opciones > form >.cuerpo_pregunta{
+    border:1.5px solid rgb(160, 160, 160);
+    padding:1rem 1rem;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color_blanco_0);
+}
+
+.pregunta_2_opciones > form >.cuerpo_pregunta > .boton_normal{
+    padding: 0.2rem 3rem;
+    margin: 0.1rem 0;
+}
+
+.pregunta_2_opciones > form > .cuerpo_pregunta > .boton_normal > p{
+    font-size: var(--size_titulo_4);
+}
+
+
+.pregunta_2_opciones > form > .cuerpo_pregunta > .boton_normal:nth-child(1){
+    background-color: rgb(194, 0, 0);
+}
+
+.pregunta_2_opciones > form >.cuerpo_pregunta > .boton_normal:nth-child(1):hover{
+    background-color: white;
+    border-color: rgb(194, 0, 0);
+}
+
+.pregunta_2_opciones > form > .cuerpo_pregunta > .boton_normal:nth-child(1):active{
+    background-color: rgb(255, 97, 97);
+}
+
+
+/* ----------------------------------------*/
+
+
+/* ------------------CONTENEDOR_CONTADOR----------------------*/
+
+.contenedor_contador_datos{
+    background-color: var(--color_celeste_oscuro_2);
+    width:14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 1rem;
+    border-radius: 1rem;
+}
+
+.contenedor_contador_datos > h3{
+    font-size: 1.5rem;
+    color:var(--color_blanco_1);
+    font-weight: var(--ancho_fuente_medio);
+    text-align: center;
+}
+
+.contenedor_contador_datos > div{
+    display:flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.contenedor_contador_datos > div > span{
+    font-size: 5.5rem;
+    color: #004a5a;
+}
+
+.contenedor_contador_datos > div > p{
+    font-size: 5.5rem;
+    font-weight: var(--ancho_fuente_grueso);
+    color:var(--color_blanco_1)
+}
+
+/* ----------------------------------------*/
+
+
+.contenedor_tabla > table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black; 
+    padding: 8px; 
+
+    
+}
+
+.imagen_foto_tabla{
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+}
+
+.cabecera_tabla{
+    background-color: rgb(198, 198, 198);
+    font-size: var(--size_titulo_2);
+}
+
+.botones_modificacion_tabla > .boton_normal{
+    font-weight: var(--ancho_fuente_medio);
+}
+
+.botones_modificacion_tabla > .boton_normal:nth-child(2){
+    background-color: rgb(194, 0, 0);
+}
+
+
+.botones_modificacion_tabla > .boton_normal:nth-child(2):hover{
+    background-color: white;
+    border-color: rgb(194, 0, 0);
+}
+
+.botones_modificacion_tabla > .boton_normal:nth-child(2):active{
+    background-color: rgb(255, 97, 97);
+}
+
+/* RECLAMO */
+
+.contenedor_reclamo{
+    background-color: rgb(217, 217, 217);
+    width:40rem;
+    padding:1rem;
+    border-radius: 2rem;
+    
+}
+
+.contenedor_reclamo > .cabecera_reclamo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor_reclamo > .cabecera_reclamo > h1{
+    padding-left: 17rem;
+    font-size: var(--size_titulo_2);
+}
+
+.contenedor_reclamo > .cabecera_reclamo > button > span{
+    margin-right: 1rem;
+    color:rgb(188, 188, 188);
+}
+
+
+.contenedor_reclamo > .cabecera_reclamo > button{
+    cursor:pointer;
+}
+
+.contenedor_reclamo > div > p{
+    font-weight: var(--ancho_fuente_medio);
+    font-size: var(--size_titulo_4);
+    color: var(--color_negro_0);
+}
+
+.el_reclamo_descripcion{
+    margin-top: 1rem;
+}
+
+/* ------------------- */
+.contenedor_login{
+    background-color:var(--color_blanco_0);
+    width:20rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.4rem 0 0 0;
+
+}
+
+.logo_login{
+
+    width:8rem;
+    height: 8rem;
+    margin-bottom: 0.4rem;
+}
+.campo_texto_entrada{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 1rem;
+    width:100%;
+}
+
+.logo_campo_texto{
+    background-color:var(--color_blanco_0);
+    width: 2rem;
+    height: 2rem;
+    padding:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.campo_texto_entrada > input{
+    padding:0 0.5rem;
+    width:70%;
+}
+
+.contenedor_login > form{
+    width:100%;
+    background-color: var(--color_blanco_1);
+    display: flex;
+    flex-direction: column;
+    padding-top:0.5rem;
+    padding-bottom:1rem;
+    align-items: center;
+    
+}
+
+.contenedor_login > form > p{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;    
+    padding:0.5rem 0;
+}
+
+.contenedor_login > form > button{
+    border-radius: 0;
+    padding:0.5rem 5rem;
+    background-color: var(--color_celeste_claro_2);
+    border-color: var(--color_celeste_oscuro_1);
+}
+
+.contenedor_login > form > button > p{
+    font-size: var(--size_titulo_5);
+    color:var(--color_blanco_1);
+}
+
+
+.logo_campo_texto > span{
+    font-size:1.5rem;
+    color:rgb(156, 156, 156);
+}
+
+
+/* sssssssssssssssssssss */
+
+.logo_salud_1{
+    width:8rem;
+    height:8rem;
+    /*background-color: black;*/
+    background-image: url("../img/logo_2.png");
+    background-size: 100% auto; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    
+}
+
+
+.logo_salud_2{
+    
+    width: 13rem;
+    height: 4.6rem;
+    background-image: url("../img/logo_1.png");
+    background-size: 100% auto; /* 100% del ancho del contenedor, altura automática */
+    background-repeat: no-repeat; /* Evitar repetición de la imagen */
+}
+
+/* ----------------- */
+
+.boton_comunicar_whatsapp{
+    padding:0.5rem 1.5rem;
+    background-color: #61e2ffd9;
+    display: inline-flex;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boton_comunicar_whatsapp:hover {
+    background-color: var(--color_celeste_oscuro_3);
+}
+
+.boton_comunicar_whatsapp:hover > p{
+    color:white;
+}
+
+.boton_comunicar_whatsapp:active{
+    background-color: var(--color_celeste_claro_1);
+}
+
+.boton_comunicar_whatsapp:active > p{
+    color:#4d4d4d
+}
+
+.boton_comunicar_whatsapp > div{
+    height:1.5rem;
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.boton_comunicar_whatsapp > p{
+    font-weight: var(--ancho_fuente_grueso);
+    font-size: var(--size_titulo_4);
+    color:var(--color_negro_0)
+}
+
+.boton_comunicar_whatsapp > div > img{
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+.cabecera_tabla{
+    background-color: var(--color_celeste_oscuro_2);
+    color:var(--color_blanco_1)
+}
+
+.contenedor_tabla{
+    width:80%;
+}
+
+.contenedor_tabla > table{
+    background-color: rgb(205, 205, 205);
+    width:100%;
+}
+

@@ -1,0 +1,7 @@
+.contenedor_tabla{
+    width:95%;
+}
+
+.contenedor_tabla > table{
+    width:100%;
+}

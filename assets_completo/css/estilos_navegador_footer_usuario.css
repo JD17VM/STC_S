@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap');
+
+:root{
+    --size_titulo_1: 35px;
+    --size_titulo_2: 28px;
+    --size_titulo_3: 24px;
+    --size_titulo_4: 20px; 
+    --size_titulo_5: 15px;
+
+    --color_celeste_claro_0:#DFF9FF;
+    --color_celeste_claro_1:#9EE2FF;
+    --color_celeste_claro_2:#61E2FF;
+
+    --color_celeste_oscuro_0:#6BCEFF;
+    --color_celeste_oscuro_1:#00C0EB;
+    --color_celeste_oscuro_2:#0098BA;
+    --color_celeste_oscuro_3:#007f9b;
+
+    --color_negro_0:#161616;
+    --color_negro_1:#0a0a0a;
+    --color_blanco_0:#fafafa;
+    --color_blanco_1:#e4e4e4;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+}
+
+html{
+    font-family: 'Inconsolata', monospace;
+}
+
+
+body{
+    display:flex;
+    flex-direction: column;
+}
+
+.navegador_usuario{
+    background-color: var(--color_celeste_claro_2);
+    padding:1rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 1px 4px 16px 2px rgba(0,0,0,0.4);
+}
+
+.contenedor_logo_izquierda{
+
+    height: 5rem;
+}
+
+
+.contenedor_enlaces_logo_derecha{
+    height: 5rem;
+    width: 50rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+.contenedor_enlaces_logo_derecha > ul.lista_navegador{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--size_titulo_4);
+    font-weight: var(--ancho_fuente_grueso);
+}
+
+.contenedor_enlaces_logo_derecha > ul.lista_navegador > li > a{
+    color:white;
+}
+
+.contenedor_enlaces_logo_derecha > .contenedor_logo_derecha{
+    height:4.5rem;
+    width:4.5rem;
+}
+
+
+
+
+.footer_usuario{
+    background-color: var(--color_celeste_oscuro_2);
+    padding:1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_usuario > .footer_usuario_lado_izquierdo{
+    width:20rem;
+    font-weight: var(--ancho_fuente_medio);
+    display: flex;
+    color: white;
+}
+
+
+.footer_usuario > .footer_usuario_lado_izquierdo > p{
+    margin-right: 2rem;
+}
+
+.footer_usuario > .footer_usuario_lado_izquierdo > a{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer_usuario > .footer_usuario_lado_derecho{
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5rem;
+    
+}
+
+.footer_usuario > .footer_usuario_lado_derecho > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_usuario > .footer_usuario_lado_derecho > ul > li > a > img{
+    width: 2.5rem;
+}

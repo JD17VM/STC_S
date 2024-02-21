@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;600;800&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+:root {
+    --color_celeste_principal:#4EB6CD ;
+    --color_celeste_oscuro: #387C8B;
+    --color_celeste_claro: #61E2FF;
+    --color_celeste_gris: #95D2DF;
+
+    --tam_titulo_1: 35px;
+    --tam_titulo_2: 28px;
+    --tam_titulo_3: 24px;
+    --tam_texto: 15px;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+
+    --size_titulo_1: 35px;
+    --size_titulo_2: 28px;
+    --size_titulo_3: 24px;
+    --size_titulo_4: 20px; 
+    --size_titulo_5: 15px;
+
+    --color_celeste_claro_0:#DFF9FF;
+    --color_celeste_claro_1:#9EE2FF;
+    --color_celeste_claro_2:#61E2FF;
+
+    --color_celeste_oscuro_0:#6BCEFF;
+    --color_celeste_oscuro_1:#00C0EB;
+    --color_celeste_oscuro_2:#0098BA;
+    --color_celeste_oscuro_3:#007f9b;
+
+    --color_negro_0:#161616;
+    --color_negro_1:#0a0a0a;
+    --color_blanco_0:#fafafa;
+    --color_blanco_1:#e4e4e4;
+
+    --ancho_fuente_delgado: 300;
+    --ancho_fuente_medio: 600;
+    --ancho_fuente_grueso: 800;
+  }
+
+
+html{
+    font-family: 'Inconsolata', monospace;
+}
+
+h1,p{
+    margin:0;
+}
+
+.inspira_salud_mental{
+    
+    background: no-repeat center/100% url("../img/imagen_cabecera_inicio.PNG");
+    display: flex;
+    height: 22rem;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inspira_salud_mental > .boton_comunicar_whatsapp{
+    margin-bottom: 2rem;
+}
+
+.mensaje_centro{
+    display: flex;
+    background: rgb(141,253,255);
+    background: linear-gradient(180deg, rgba(141,253,255,1) 0%, rgba(205,205,205,1) 90%);
+}
+
+.texto_centro{
+    height:20rem;
+    width:75%;
+}
+
+.director_centro{
+    /*background-color: green;*/
+    height:20rem;
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: var(--ancho_fuente_medio);
+}
+
+.foto_director_centro{
+    background-color: blue;
+    width:13rem;
+    height:13rem;
+    border-radius: 50%;
+    margin-bottom: 0.7rem;
+}
+
+.foto_director_centro > img, .seccion_nuestras_secciones > .imagen > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.texto_centro{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_centrado{
+    /* background-color:yellow; */
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor_centrado > h1{
+    margin-bottom: 1.5rem;
+}
+
+.contenedor_centrado > .boton_comunicar_whatsapp{
+    margin-top: 4rem;
+}
+
+.contenedor_centrado > .boton_comunicar_whatsapp > a > div > img{
+    height: 100%;
+}
+/* ddddddddddd */
+
+.nuestros_servicios{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nuestros_servicios > h1{
+    padding:1rem 0;
+}
+
+.seccion_nuestras_secciones > .imagen{
+    /* background-color:rgb(0, 0, 0); */
+    width:7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.espacio_secciones_nuestros_servicios{
+    
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+.seccion_nuestras_secciones{
+    margin-top:1rem;
+    width:12rem;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion_nuestras_secciones > p{
+    margin-bottom: 0.5rem;
+}
+
+.seccion_nuestras_secciones > a{
+    margin-bottom: 1rem;
+}
+
+
+/*video*/
+
+.videos_relacionados{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(226, 226, 226);
+}
+
+.videos_relacionados > .contenedor_titulo {
+    background-color: var(--color_blanco_0);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.videos_relacionados > .contenedor_titulo >  h1{
+    padding:0.3rem 0;
+}
+
+.videos_relacionados > .boton_comunicar_whatsapp{
+    margin-bottom: 1rem;
+}
+
+.contenedor_slider{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_secciones_videos{
+    /* background-color: blue; */
+    display: flex;
+    width:90%;
+    /* justify-content: center; */
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-bottom:1rem;
+    
+}
+
+
+.seccion_video{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:1rem;
+    margin:0 0.5rem ;
+}
+
+.imagen_video{
+    background-color: black;
+    width:15rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.seccion_video > p{
+    margin-bottom: 0.4rem;
+    font-weight: var(--ancho_fuente_grueso);
+}
+
+
+.boton_slide{
+
+    padding:2rem 0.5rem;
+    cursor: pointer;
+}
+
+.cont_boton_next{
+    margin-left: 0.5rem;
+}
+
+.cont_boton_prev{
+    margin-right: 0.5rem;
+}
+
+.contenedor_boton_whatsapp_inicio{
+    display: flex; 
+    justify-content: center; 
+    background-color: rgb(226, 226, 226); 
+    padding: 1rem 0;
+}
+
+.boton_slide > span{
+    color:rgb(105, 105, 105);
+    font-size: 2.2rem;
+}
