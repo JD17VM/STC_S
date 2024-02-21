@@ -27,7 +27,7 @@
             <div class="logo_login logo_salud_1"></div>
 
 
-            <form action="login.php" method="post">
+            <form action="" method="post">
                 <p>Ingrese sus datos para iniciar sesión</p>
                 <div class="campo_texto_entrada">
                     <div class="logo_campo_texto"><span class="material-symbols-outlined">person</span></div>
@@ -77,13 +77,10 @@
                 if ($passwor_1 == $row['password']) {
                     $_SESSION['id_admin'] = $row['id_administrador'];
                     echo "llegue acá";
-                    $nuevo_en = "<script>location.href='" . $_POST['redirect'] . "'</script>";
-                    //header("Location: " . $_POST['redirect']);
-                    echo  $nuevo_en;
-                    
-                    //echo "Redirigiendo a: " . $_POST['redirect'];
+                    header("Location: " . $_POST['redirect']);
+                    echo "Redirigiendo a: " . $_POST['redirect'];
                     echo "llegue awcá";
-                    //exit();
+                    exit();
                 } else {
                     echo "Contraseña incorrecta.";
                 }
