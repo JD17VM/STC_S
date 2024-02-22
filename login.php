@@ -22,10 +22,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo $correo_electronico;
             if ($passwor_1 == $row['password']) {
                 $_SESSION['id_admin'] = $row['id_administrador'];
-                echo "llegue acá";
+                //echo "llegue acá";
                 header("Location: " . $_POST['redirect']);
-                echo "Redirigiendo a: " . $_POST['redirect'];
-                echo "llegue awcá";
+                //echo "Redirigiendo a: " . $_POST['redirect'];
+                //echo "llegue awcá";
                 exit();
             } else {
                 echo "Contraseña incorrecta.";
