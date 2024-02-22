@@ -47,10 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Location" content="https://www.jpawaj.com/Salud_TC/administrador/admin_inicio/index.php"/>
-    <script type="text/javascript">
-      window.location.replace("https://www.jpawaj.com/Salud_TC/administrador/admin_inicio/index.php");
-    </script>
+    
     <?php
         $ruta_base_estilos = "";
         include("nav_footer/contenido_head.php");
