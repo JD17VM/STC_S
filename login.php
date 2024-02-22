@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="text" id="password" name="password" placeholder="Contraseña" required>
                 </div>
                 <input type="submit" value="Iniciar Sesión" class="boton_normal">
-                <input type="hidden" name="redirect" value="administrador/admin_inicio/">
+                <input type="hidden" name="redirect" value="administrador/admin_inicio/index.php">
             </form>
 
 
