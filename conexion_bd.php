@@ -5,8 +5,8 @@
   $password = "beze24siPA";           // Reemplaza con tu contraseña de la base de datos
   $database = "c2081645_salud_t"; // Reemplaza con el nombre de tu base de datos
 
-  // $conexion = new mysqli($servername, $username, $password, $database);
-  $conexion = mysqli_connect("localhost", "root", "", "salud_tc");
+  $conexion = new mysqli($servername, $username, $password, $database);
+  // $conexion = mysqli_connect("localhost", "root", "", "salud_tc");
 
   // Verificar la conexión
   if (!$conexion) {
