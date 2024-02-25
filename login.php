@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['id_admin'] = $row['id_administrador'];
                 //echo "llegue acá";
                 header("Location: " . $_POST['redirect']);
+                echo "<script>location.href='https://www.jpawaj.com/Salud_TC/administrador/admin_inicio/index.php';</script>";
                 //echo "Redirigiendo a: " . $_POST['redirect'];
                 //echo "llegue awcá";
                 // die();
@@ -96,8 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php
         $ruta_base_libro ="usuario/";
         include("nav_footer/footer_usuario.php");
-        header("Location: http://www.ejemplo.com/pagina_destino.php");
-        exit;
+        
   ?>
 
 
