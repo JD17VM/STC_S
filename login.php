@@ -15,11 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($row = mysqli_fetch_assoc($resultado)) {
         if (isset($row['password'])) {
-            echo $row['password'];
-            echo $row['correo_electronico'];
-            echo "<br>";
-            echo $passwor_1;
-            echo $correo_electronico;
+            // echo $row['password'];
+            // echo $row['correo_electronico'];
+            // echo "<br>";
+            // echo $passwor_1;
+            // echo $correo_electronico;
             if ($passwor_1 == $row['password']) {
                 $_SESSION['id_admin'] = $row['id_administrador'];
                 //echo "llegue acá";
