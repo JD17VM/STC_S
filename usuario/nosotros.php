@@ -6,10 +6,12 @@ include("../conexion_bd.php");
 
 // Volver a realizar la consulta después de eliminar o agregar un nuevo registro
 
-$consulta_usuario = "SELECT id_videos, nombre_video, direccion_url FROM videos";
+$consulta_usuario = "SELECT id_documento, nombre_documento, enlace_documento FROM documentos";
 $stmt_usuario = mysqli_prepare($conexion, $consulta_usuario);
 mysqli_stmt_execute($stmt_usuario);
 $resultado_director = mysqli_stmt_get_result($stmt_usuario);
+
+
 
 mysqli_close($conexion);
 ?>
@@ -75,12 +77,41 @@ mysqli_close($conexion);
         <div class="contenedor_titulo_documentos">
             <h2>DOCUMENTOS DE GESTIÓN</h2>
         </div>
-        <div class="contenedor_documentos"></div>
+        <div class="contenedor_slider_documentos">
+            <div class="boton_slide cont_boton_prev"><span class="material-symbols-outlined">arrow_back_ios</span></div>
+            <div class="contenedor_secciones_documentos">
+    
+                <?php while ($row_chat = mysqli_fetch_assoc($resultado_director)): ?>
+                <div class="seccion_documento">
+                    <div class="imagen_documento">
+                        <img src="../assets_completo/img/icono_documento.png" alt="">
+                    </div>
+                    <p><?php echo $row_chat['nombre_documento']; ?></p>
+                    <a href="archivos/<?php echo $row_chat['enlace_documento']; ?>" target="_blank">DESCARGAR</a>
+                </div>
+                <?php endwhile; ?>
+      
+            </div>
+            <div class="boton_slide cont_boton_next"><span class="material-symbols-outlined">arrow_forward_ios</span></div>
+        </div>
     </div>
 
     <?php
         $ruta_base_libro ="";
         include("../nav_footer/footer_usuario.php");
   ?>
+  <script>
+        const prev = document.querySelector('.cont_boton_prev');
+        const next = document.querySelector('.cont_boton_next');
+        const slider = document.querySelector('.contenedor_secciones_documentos');
+
+        prev.addEventListener('click', () => {
+            slider.scrollLeft -= 300;
+        })
+
+        next.addEventListener('click', () => {
+            slider.scrollLeft += 300;
+        })
+    </script>
 </body>
 </html>
