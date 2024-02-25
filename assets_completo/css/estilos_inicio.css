@@ -268,3 +268,51 @@ h1,p{
     color:rgb(105, 105, 105);
     font-size: 2.2rem;
 }
+
+
+@media only screen and (max-width: 600px){
+    .espacio_secciones_nuestros_servicios{
+        overflow: hidden;
+        /* scroll-behavior: smooth; */
+        width:100%;
+        overflow-x: auto
+    }
+
+    .seccion_nuestras_secciones{
+        margin-right:1rem;
+    }
+
+    .foto_director_centro{
+        width:10rem;
+        height:10rem;
+    }
+
+    .texto_centro{
+        width:100%;
+        height: auto;
+        padding-top:1rem;
+    }
+
+    .mensaje_centro{
+        flex-direction: column;
+    }
+
+    .director_centro{
+        width:100%;
+        height: auto;
+        padding: 1rem 0;
+    }
+    
+    .inspira_salud_mental{
+        height: 12rem;
+        width: 100%;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+
+    .contenedor_centrado > .boton_comunicar_whatsapp{
+        margin-top:1rem;
+    }
+
+    
+}

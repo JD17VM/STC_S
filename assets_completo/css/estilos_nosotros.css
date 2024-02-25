@@ -274,3 +274,39 @@ h1{
     color:rgb(105, 105, 105);
     font-size: 2.2rem;
 }
+
+
+
+@media only screen and (max-width: 600px){
+    .contenedor_triple{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contenedor_triple .cont_imagen_medio{
+        width: 15rem;
+        height: 6rem;
+    }
+
+    .contenedor_texto_foto{
+        flex-direction: column;
+    }
+
+    .contenedor_texto_foto > .contenedor_texto{
+        width:100%;
+        
+    }
+
+    .contenedor_texto_foto > .contenedor_foto{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .contenedor_triple .cont_imagen_medio{
+        background-size: 100% auto;
+    }
+
+    
+}
+
+
