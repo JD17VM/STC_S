@@ -26,8 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 header("Location: " . $_POST['redirect']);
                 //echo "Redirigiendo a: " . $_POST['redirect'];
                 //echo "llegue awcá";
-                die();
-                exit();
+                // die();
+                // exit();
             } else {
                 echo "Contraseña incorrecta.";
             }
@@ -96,6 +96,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php
         $ruta_base_libro ="usuario/";
         include("nav_footer/footer_usuario.php");
+        header("Location: http://www.ejemplo.com/pagina_destino.php");
+        exit;
   ?>
 
 
