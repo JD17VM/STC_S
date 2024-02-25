@@ -34,6 +34,8 @@
     justify-content: center;
     align-items: center;
     background-image: url("../img/fondo_login.png");
-    background-size: 100% auto; /* 100% del ancho del contenedor, altura automática */
+    background-size: auto 100%; /* 100% del ancho del contenedor, altura automática */
     background-repeat: no-repeat; /* Evitar repetición de la imagen */
+    background-position: center;
 }
+

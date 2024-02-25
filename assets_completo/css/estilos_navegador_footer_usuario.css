@@ -48,7 +48,6 @@ body{
 }
 
 .contenedor_logo_izquierda{
-
     height: 5rem;
 }
 
@@ -145,5 +144,18 @@ body{
 
     .footer_usuario > .footer_usuario_lado_derecho > ul{
         justify-content: space-around;
+    }
+
+    .navegador_usuario > div.contenedor_enlaces_logo_derecha > ul.lista_navegador{
+        flex-wrap: wrap;
+        margin-right: 1rem;
+    }
+
+    .logo_salud_2{
+        display: none;
+    }
+
+    .contenedor_enlaces_logo_derecha > ul.lista_navegador > li > a{
+        font-size: 1rem;
     }
 }
